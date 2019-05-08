@@ -1,7 +1,8 @@
 import React from 'react';
 
+
 const Complements = (props)=>(
-    <h2>Desayunos</h2>
+    <h2>Comples</h2>
 );
 
 export default Complements;

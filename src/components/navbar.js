@@ -6,9 +6,9 @@ const Navbar = (props) => (
     <ul className="nav-menu">
         <li><NavLink className="nav-menu__link" exact to="/">Home</NavLink></li>
         <li><NavLink className="nav-menu__link" to="/breakfast">Desayuno</NavLink></li>
-        <li><NavLink className="nav-menu__link" to="/burger">Hamburguesas</NavLink></li>  
+        <li><NavLink className="nav-menu__link" to="/burgers">Hamburguesas</NavLink></li>  
         <li><NavLink className="nav-menu__link" to="/drinks">Bebidas</NavLink></li>
-        <li><NavLink className="nav-menu__link" to="/complementos">Complementos</NavLink></li>     
+        <li><NavLink className="nav-menu__link" to="/complements">Complementos</NavLink></li>     
     </ul>
   </div>
 );
