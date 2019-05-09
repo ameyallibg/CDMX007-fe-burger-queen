@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import './App.css';
+import './css/App.css';
+
 import Home from './components/home';
 import Navbar from './components/navbar';
 import Breakfast from './components/breakfast';
@@ -15,12 +16,13 @@ class App extends Component {
       <BrowserRouter>
         <div className ="App">
           <Navbar />
-          <Route exact path="/" render = { () => <Home/>} />
+          {/*<Route exact path="/" render = { () => <Home/>} /> */}
           <Route path="/breakfast" render = { () => <Breakfast/>}/>
           <Route path="/burgers" render = { () => <Burgers/>}/>
           <Route path="/drinks" render = { () => <Drinks/>}/>
           <Route path="/complements" render = { () => <Complements/>}/>
         </div>
+
       </BrowserRouter>
       );
     }
