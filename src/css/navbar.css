@@ -1,5 +1,8 @@
-.nav {
+body{
   background-color: #eeece6;
+}
+.nav {
+  /* background-color: #eeece6; */
   font-size: 1.5rem;
   font-style: normal;
   font-stretch: normal;
@@ -35,23 +38,15 @@
 }
 
 .ticket-nav {
-  font-size: 24px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.83;
-  letter-spacing: normal;
-  display: flex;
-  justify-content: space-between;
-  width: 344px;
+  width: 33.59375%;
   height: 55px;
-  border-radius: 2px;
   text-align: left;
-  margin-left: 13px;
   border-left-style: solid;
-
-
+  border-right-style: solid;
+  border-top-style: solid;
+  border-color:#707070;
+  border-width:1px ;
 }
-
 
 .ticket-descri {
   font-weight: 500;
@@ -59,8 +54,6 @@
   display: inline-flex;
   margin-top: 16px;
 }
-
-
 
 .nav-menu__link {
   color: black;

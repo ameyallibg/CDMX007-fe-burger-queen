@@ -1,0 +1,75 @@
+.menu-burger {
+  background-color: #eeece6;
+  font-weight: bold;
+  display: inline-flex;
+  margin-top: 16px;
+  width: 66.2%;
+  height: 703px;
+  margin: 0px;
+  border-right-style: solid;
+  border-color: #707070;
+  border-width: 1px;
+  text-align: center;
+}
+
+.btn-burger-style {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  width: 238.6px;
+  height: 115px;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #707070;
+  border-radius: 15px;
+  margin-bottom: 19px;
+  margin-top: 19px;
+  background-color: #eeece6;
+}
+
+.btn-circulo {
+    display: inline-flex;
+    width: 42.6px;
+    height: 42.6px;
+    border: solid 2px;
+    border-radius: 50%;
+    border-color: #fac105;
+    margin-left: -173px;
+    margin-top: 29px;
+
+}
+
+.img-burger {
+  margin: 3px;
+}
+
+.img-burger-s {
+    margin: 4px;
+  }
+
+.btn-text{
+    width: 73px;
+    height: 82px;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: -46px;
+    margin-left: 56px;
+}
+
+.btn-price{
+    width: 41px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: -31px;
+    margin-left: 171px;
+}
