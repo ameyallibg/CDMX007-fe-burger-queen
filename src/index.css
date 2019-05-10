@@ -1,0 +1,120 @@
+.header{
+  background-color: #fac105;
+  margin-top:-1px;
+
+}
+.logoburguer{
+  
+  width: 5%;
+  height: auto;
+  position: absolute;
+  margin-left: -6%;
+}
+.burguer-width{
+  display: inline;
+  width: 18%;
+  height: auto;
+}
+
+.tipo-burguer{
+  display: inline;
+  font-family: Roboto;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.color-gray{
+  background:#eeece6
+}
+
+.main{
+  width: 66.6%;
+  margin: 0px;
+  float: left;
+}
+.cuenta{
+  width: 33.2%;
+  margin: 0px;
+  float: right;
+  border-left: solid;
+  border-width: 1px;
+ 
+  
+}
+.font-roboto-bold{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.31vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+.font-roboto-normal{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.31vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+.color-black{
+  color: black;
+}
+
+html{
+  margin: 0px;
+}
+body {
+  background-color: #eeece6;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+.left-header{
+  margin-top: -7px;
+}
+ul.left-header li{
+  display: inline;
+  list-style-type: none;
+  
+}
+ul.left-header{
+  padding: 0px;
+  
+}
+ul.left-header a{
+  text-decoration: none;
+  padding: 5%;
+  display: inline-block;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header img {
+  display: inline;
+  list-style-type: none;
+  
+}
+ul.header {
+  
+  padding-left: 9%;
+}
+ul.header li a {
+  
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2%;
+  display: inline-block;
+}
+.content {
+  
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
