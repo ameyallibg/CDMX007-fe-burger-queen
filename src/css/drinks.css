@@ -1,0 +1,66 @@
+.menu-drinks {
+    background-color: #eeece6;
+    font-weight: bold;
+    display: inline-flex;
+    margin-top: 16px;
+    width: 66.2%;
+    height: 703px;
+    margin: 0px;
+    border-right-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+    text-align: center;
+  }
+  
+  .btn-drinks-style {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    width: 238.6px;
+    height: 115px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #707070;
+    border-radius: 15px;
+    margin-bottom: 19px;
+    margin-top: 255px;
+    margin-left: 64px;
+    background-color: #eeece6;
+  }
+  
+  .img-drinks {
+    margin: 3px;
+  }
+  
+  .img-drinks-s {
+    margin: 4px;
+  }
+  
+  .btn-text-drinks {
+    width: 155px;
+    height: 82px;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: -37px;
+    margin-left: 56px;
+  }
+
+  .btn-price-drinks{
+    margin-top: -49px;
+    margin-left: 151px;
+    font-size: 24px;
+  }
+
+  .btn-drinks-right{
+    margin-left: 15px;
+  }
+
+  .btn-drinks{
+    margin-left: -29px;
+  }
+  
+  

@@ -32,7 +32,7 @@ const Burgers = (props)=>(
               <div className="btn-price">$15</div>
               </button>
         </div>
-        <div className="btns-burgers">
+        <div className="btns-burgers-right">
               <button className="btn-burger-style">
               <div className="btn-circulo"> <img className="img-burger" src={burgerDoble} /></div>
               <div className="btn-text">Doble Res</div>
@@ -50,8 +50,8 @@ const Burgers = (props)=>(
               </button>
               <button className="btn-burger-style">
               <div className="btn-circulo"> <img className="img-burger" src={egg} /></div>
-              <div className="btn-text">Huevo</div>
-              <div className="btn-price">$15</div>
+              <div className="btn-text-drinks">Huevo</div>
+              <div className="btn-price-drinks">$15</div>
               </button>
         </div>
     </div>

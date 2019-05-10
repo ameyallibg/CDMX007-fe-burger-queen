@@ -12,6 +12,9 @@
   text-align: center;
 }
 
+.btns-burgers-right{
+    margin-left: -74px;
+}
 .btn-burger-style {
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
