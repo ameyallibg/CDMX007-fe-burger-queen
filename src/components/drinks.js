@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/drinks.css';
 import water from '../assets/014-agua.png';
 import cola from '../assets/005-cola.png';
 
