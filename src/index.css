@@ -10,16 +10,12 @@
   position: absolute;
   margin-left: -6%;
 }
-.burguer-width{
-  display: inline;
-  width: 18%;
-  height: auto;
-}
+
 
 .tipo-burguer{
   display: inline;
   font-family: Roboto;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 600;
 }
 
@@ -107,14 +103,136 @@ ul.header li a {
   padding: 2%;
   display: inline-block;
 }
-.content {
-  
-  padding: 20px;
-}
+
 .content h2 {
   padding: 0;
   margin: 0;
 }
 .content li {
   margin-bottom: 10px;
+}
+
+.menu-center{
+  display: inline;
+  margin-left: -39%;
+}
+
+
+
+.button-border{
+  background: #eeece6;
+  width: 34%;
+  /* border: 2px; */
+  border: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  padding-top: 1.5em;
+  padding-left: 1.5%;
+}
+.p-top{
+  margin-top: -5em;
+}
+.p-bottom{
+  margin-left: -42%;
+}
+
+.style-precio{
+  font-size: 2vw;
+  font-family: roboto;
+  font-weight: bold;
+  padding-top: .5em;
+}
+.container{
+  
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.container-flex-izq{
+    
+    width: 50%;
+    flex-direction: column;
+    display: inline-block;
+   
+}
+.container-flex-der{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.bloque{
+  flex-direction: row;
+  
+  padding:0px;
+  margin:0px;
+}
+.bloque-der{
+  width: 18%;
+  padding-left: 2%;
+}
+.bloque-centro{
+  width: 45%;
+  padding-left: 2.5%;
+}
+.bloque-izq{
+  width: 32.5%;
+}
+.marco-bloque{
+  display: flex;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  width: 86%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-color: #707070;
+}
+.img-comida{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.title-container{
+  font-family: Roboto;
+  font-size: 2.5vw;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.92;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0px;
+}
+.precio{
+  padding-top: 3.5em;
+  font-size: 2.4vw;
+  margin: 0px;
+  padding-left: 33%;
+  font-weight: 600;
+  padding-right: 13%;
+}
+.bloque-img{
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #fac105;
+}
+.container-cond{
+  display: flex;
+  justify-content: center;
+}
+
+.div-condimentos{
+  width: 12%;
+  border-style: solid;
+  border-radius: 10px;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+}
+.condimentos{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
