@@ -26,8 +26,20 @@ code {
   text-align: center;
 }
 
+.menu-burger-more {
+  display: inline-table;
+  margin-top: 16px;
+  width: 66.2%;
+  height: 703px;
+  margin: 0px;
+  border-right-style: solid;
+  border-color: #707070;
+  border-width: 1px;
+  text-align: center;
+}
 .btns-burgers-right {
-  margin-left: -74px;
+  margin-left: 62px;
+  margin-top: 232px;
 }
 .btn-burger-style {
   font-family: "Roboto", sans-serif;
@@ -76,6 +88,19 @@ code {
   margin-left: 56px;
 }
 
+.btn-text-break {
+  width: 99px;
+  height: 82px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.92;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: -53px;
+  margin-left: 56px;
+}
 .btn-price {
   width: 41px;
   height: 32px;
@@ -88,4 +113,41 @@ code {
   text-align: left;
   margin-top: -31px;
   margin-left: 171px;
+}
+
+.App-burger {
+  height: 700px;
+}
+.App {
+  height: 700px;
+}
+
+.btns-burgers {
+  display: inline;
+  margin: 12px;
+}
+.ticket-style {
+  display: inline-block;
+  border: solid;
+}
+.ticket-comanda {
+  margin-top: 10px;
+}
+
+.produc-list {
+  list-style: none;
+  text-align: justify;
+}
+pre {
+  font-size: 24px;
+  font-family: inherit;
+}
+
+.btn-ticket {
+  width: 316px;
+  height: 61px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #707070;
+  background-color: #eeece6;
 }

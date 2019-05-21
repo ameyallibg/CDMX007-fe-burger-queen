@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./css/App.css";
 import Navbar from "./components/navbar";
 import Products from "./components/products";
+// import Ticket from "./components/ticket";
 
 class App extends Component {
   render() {
@@ -10,7 +11,6 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          {/*<Route exact path="/" render = { () => <Home/>} /> */}
           <Route path="/breakfast" render={() => <Products />} />
           <Route path="/burgers" render={() => <Products />} />
           <Route path="/drinks" render={() => <Products />} />
