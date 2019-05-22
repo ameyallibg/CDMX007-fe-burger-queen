@@ -9,7 +9,7 @@ const Navbar = props => (
     <div className="nav-menu">
       <ul className="menu-list">
         {/* <li><NavLink className="nav-menu__link" exact to="/">Home</NavLink></li> */}
-        <img className="logo-burger " src={logoBurger} />
+        <img className="logo-burger " src={logoBurger} alt="logo-icon" />
         <li>
           <NavLink className="nav-menu__link" to="/breakfast">
             Desayuno
@@ -34,7 +34,7 @@ const Navbar = props => (
     </div>
     <div className="ticket-nav">
       <ul className="ticket-descri">
-        <li className="space-cant">Cant.</li>
+        <li className="space-cant">#</li>
         <li className="space-product">Producto</li>
         <li>Precio</li>
       </ul>

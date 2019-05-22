@@ -10,13 +10,13 @@ class Products extends Component {
           {items
             .filter(items => items.type.includes("drinks"))
             .map(item => (
-              <div className="btns-burgers-right">
+              <div key={item.id} className="btns-burgers-right">
                 <button
                   className="btn-burger-style"
                   onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
-                    <img className="img-burger " src={item.img} />
+                    <img className="img-burger " src={item.img} alt="drinks" />
                   </div>
                   <div className="btn-text">{item.name} </div>
                   <div className="btn-price">${item.price} </div>
@@ -31,13 +31,13 @@ class Products extends Component {
           {items
             .filter(items => items.type.includes("burgers"))
             .map(item => (
-              <div className="btns-burgers">
+              <div key={item.id} className="btns-burgers">
                 <button
                   className="btn-burger-style"
                   onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
-                    <img className="img-burger " src={item.img} />
+                    <img className="img-burger " src={item.img} alt="burgers" />
                   </div>
                   <div className="btn-text">{item.name} </div>
                   <div className="btn-price">${item.price} </div>
@@ -52,13 +52,17 @@ class Products extends Component {
           {items
             .filter(items => items.type.includes("complements"))
             .map(item => (
-              <div className="btns-burgers-right">
+              <div key={item.id} className="btns-burgers-right">
                 <button
                   className="btn-burger-style"
                   onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
-                    <img className="img-burger " src={item.img} />
+                    <img
+                      className="img-burger "
+                      src={item.img}
+                      alt="complements"
+                    />
                   </div>
                   <div className="btn-text-break">{item.name} </div>
                   <div className="btn-price">${item.price} </div>
@@ -73,13 +77,17 @@ class Products extends Component {
           {items
             .filter(items => items.type.includes("breakfast"))
             .map(item => (
-              <div className="btns-burgers">
+              <div key={item.id} className="btns-burgers">
                 <button
                   className="btn-burger-style"
                   onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
-                    <img className="img-burger " src={item.img} />
+                    <img
+                      className="img-burger "
+                      src={item.img}
+                      alt="breakfast"
+                    />
                   </div>
                   <div className="btn-text-break">{item.name} </div>
                   <div className="btn-price">${item.price} </div>

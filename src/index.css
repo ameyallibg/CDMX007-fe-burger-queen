@@ -20,9 +20,7 @@ code {
   width: 66.2%;
   height: 703px;
   margin: 0px;
-  border-right-style: solid;
-  border-color: #707070;
-  border-width: 1px;
+
   text-align: center;
 }
 
@@ -32,9 +30,7 @@ code {
   width: 66.2%;
   height: 703px;
   margin: 0px;
-  border-right-style: solid;
-  border-color: #707070;
-  border-width: 1px;
+
   text-align: center;
 }
 .btns-burgers-right {
@@ -144,6 +140,8 @@ pre {
 }
 
 .btn-ticket {
+  line-height: 1px;
+  text-align: start;
   width: 316px;
   height: 61px;
   border-radius: 12px;

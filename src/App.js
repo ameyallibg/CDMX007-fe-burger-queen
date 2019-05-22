@@ -16,7 +16,6 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Navbar />
-
             <Route path="/breakfast" render={() => <Products />} />
             <Route path="/burgers" render={() => <Products />} />
             <Route path="/drinks" render={() => <Products />} />

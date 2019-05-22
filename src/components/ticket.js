@@ -5,12 +5,12 @@ class Ticket extends Component {
     const { order } = this.context;
     return (
       <div className="ticket-order">
-        {order.map(order => (
-          <ul className="produc-list">
+        {order.map((order, index) => (
+          <ul key={index} className="produc-list">
             <li>
               <button className="btn-ticket">
                 <pre>
-                  {order.name} $ {order.price}
+                  {index + 1} - {order.name} $ {order.price}
                 </pre>
               </button>
             </li>

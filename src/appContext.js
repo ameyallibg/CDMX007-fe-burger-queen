@@ -19,8 +19,6 @@ export class AppContextProvider extends React.Component {
     this.setState({
       order: productOrder
     });
-
-    console.log(productOrder);
   }
 
   componentDidMount() {
