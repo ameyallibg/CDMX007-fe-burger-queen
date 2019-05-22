@@ -1,39 +1,10 @@
 import React, { Component } from "react";
-import Ticket from "./ticket";
 
 class Products extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-      order: [],
-      isLoaded: false
-    };
-  }
-
-  clickMe(items) {
-    const producSelect = this.setState({
-      order: [...this.state.order, { name: items.name, price: items.price }]
-    });
-  }
-
-  componentDidMount() {
-    fetch("https://buger-queen.firebaseio.com/products.json").then(res =>
-      res.json().then(json => {
-        this.setState({
-          isLoaded: true,
-          items: json
-        });
-      })
-    );
-  }
-
   render() {
-    var { isLoaded, items, order } = this.state;
+    const { items, btnSelect } = this.context;
 
-    if (!isLoaded) {
-      return <div>Loading...</div>;
-    } else if (window.location.href.includes("drinks")) {
+    if (window.location.href.includes("drinks")) {
       return (
         <div className="menu-burger">
           {items
@@ -42,7 +13,7 @@ class Products extends Component {
               <div className="btns-burgers-right">
                 <button
                   className="btn-burger-style"
-                  onClick={this.clickMe.bind(this, item)}
+                  onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
                     <img className="img-burger " src={item.img} />
@@ -52,7 +23,6 @@ class Products extends Component {
                 </button>
               </div>
             ))}
-          <Ticket order={this.state.order} />
         </div>
       );
     } else if (window.location.href.includes("burgers")) {
@@ -64,7 +34,7 @@ class Products extends Component {
               <div className="btns-burgers">
                 <button
                   className="btn-burger-style"
-                  onClick={this.clickMe.bind(this, item)}
+                  onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
                     <img className="img-burger " src={item.img} />
@@ -74,8 +44,6 @@ class Products extends Component {
                 </button>
               </div>
             ))}
-
-          <Ticket order={this.state.order} />
         </div>
       );
     } else if (window.location.href.includes("complements")) {
@@ -87,7 +55,7 @@ class Products extends Component {
               <div className="btns-burgers-right">
                 <button
                   className="btn-burger-style"
-                  onClick={this.clickMe.bind(this, item)}
+                  onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
                     <img className="img-burger " src={item.img} />
@@ -97,7 +65,6 @@ class Products extends Component {
                 </button>
               </div>
             ))}
-          <Ticket order={this.state.order} />
         </div>
       );
     } else if (window.location.href.includes("breakfast")) {
@@ -109,7 +76,7 @@ class Products extends Component {
               <div className="btns-burgers">
                 <button
                   className="btn-burger-style"
-                  onClick={this.clickMe.bind(this, item)}
+                  onClick={() => btnSelect(item)}
                 >
                   <div className="btn-circulo">
                     <img className="img-burger " src={item.img} />
@@ -119,7 +86,6 @@ class Products extends Component {
                 </button>
               </div>
             ))}
-          <Ticket order={this.state.order} />
         </div>
       );
     } else {

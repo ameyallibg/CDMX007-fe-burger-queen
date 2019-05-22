@@ -151,3 +151,9 @@ pre {
   border: solid 2px #707070;
   background-color: #eeece6;
 }
+
+.ticket-order {
+  margin-left: -26px;
+  text-align: center;
+  margin-top: 41px;
+}
