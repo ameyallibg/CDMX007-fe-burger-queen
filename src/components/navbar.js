@@ -34,7 +34,7 @@ const Navbar = props => (
     </div>
     <div className="ticket-nav">
       <ul className="ticket-descri">
-        <li className="space-cant">#</li>
+        <li className="space-cant">Cant.</li>
         <li className="space-product">Producto</li>
         <li>Precio</li>
       </ul>

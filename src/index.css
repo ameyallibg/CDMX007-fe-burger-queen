@@ -140,18 +140,52 @@ pre {
 }
 
 .btn-ticket {
-  line-height: 1px;
-  text-align: start;
+  white-space: normal;
+
   width: 316px;
-  height: 61px;
+
   border-radius: 12px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   border: solid 2px #707070;
   background-color: #eeece6;
+
+  padding: 5px;
+
+  font-size: inherit;
+  text-align: center;
 }
 
 .ticket-order {
   margin-left: -26px;
   text-align: center;
   margin-top: 41px;
+}
+.btn-text-ticket {
+  width: 157px;
+  margin-left: 61px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.btn-cant-ticket {
+  margin-top: -27px;
+  margin-left: -250px;
+}
+
+.btn-total-ticket {
+  margin-left: 243px;
+  margin-top: -26px;
+}
+
+.total-ticket {
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 149px;
+  left: 860px;
+}
+.btn-less {
+  border-radius: 6px;
+  border: none;
+  background-color: #eeece6;
 }
