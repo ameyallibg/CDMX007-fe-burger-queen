@@ -3,13 +3,13 @@ import less from "../assets/minus.png";
 
 class Ticket extends Component {
   render() {
-    const { order, btnDelete } = this.context;
+    const { order, btnDelete, btnCancel } = this.context;
     return (
       <div className="ticket-order">
         {order.map((order, index) => (
           <ul key={index} className="produc-list">
             <li>
-              <button className="btn-ticket">
+              <div className="btn-ticket">
                 <div className="btn-text-ticket">
                   {order.lastname} {order.name}
                 </div>
@@ -18,7 +18,7 @@ class Ticket extends Component {
                 <button className="btn-less" onClick={() => btnDelete(order)}>
                   <img className="img-burger " src={less} alt="drinks" />
                 </button>
-              </button>
+              </div>
             </li>
           </ul>
         ))}
@@ -27,6 +27,12 @@ class Ticket extends Component {
           {order.reduce((sum, newPrice) => {
             return sum + newPrice.total;
           }, 0)}
+        </div>
+        <div className="btn-can-send">
+          <button className="btns-ticket" onClick={() => btnCancel(order)}>
+            Cancelar orden
+          </button>
+          <button className="btns-ticket">Confirmar orden</button>
         </div>
       </div>
     );

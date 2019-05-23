@@ -156,25 +156,25 @@ pre {
 }
 
 .ticket-order {
-  margin-left: -26px;
+  margin-left: -34px;
   text-align: center;
-  margin-top: 41px;
 }
 .btn-text-ticket {
   width: 157px;
-  margin-left: 61px;
+  margin-left: 73px;
   margin-top: 3px;
   text-align: center;
+  line-height: 26px;
 }
 
 .btn-cant-ticket {
-  margin-top: -27px;
+  margin-top: -23px;
   margin-left: -250px;
 }
 
 .btn-total-ticket {
   margin-left: 243px;
-  margin-top: -26px;
+  margin-top: -19px;
 }
 
 .total-ticket {
@@ -188,4 +188,32 @@ pre {
   border-radius: 6px;
   border: none;
   background-color: #eeece6;
+  margin-top: 6px;
+}
+
+.btns-ticket {
+  font-size: 26px;
+  font-weight: bold;
+  width: 147px;
+  height: 76px;
+  border-radius: 24px;
+  border: solid 2px #721a16;
+  background-color: #eeece6;
+  margin-left: 14px;
+  color: #721a16;
+}
+
+.btn-can-send {
+  position: fixed;
+  bottom: 20px;
+  left: 683px;
+}
+
+.btn-burger-style:hover {
+  border: solid 3px #721a16;
+}
+
+.btns-ticket:hover {
+  background-color: #721a16;
+  color: #fac105;
 }

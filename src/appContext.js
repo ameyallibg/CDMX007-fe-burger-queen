@@ -11,6 +11,16 @@ export class AppContextProvider extends React.Component {
     };
     this.btnSelect = this.btnSelect.bind(this);
     this.btnDelete = this.btnDelete.bind(this);
+    this.btnCancel = this.btnCancel.bind(this);
+  }
+  componentDidMount() {
+    fetch("https://buger-queen.firebaseio.com/products.json").then(res =>
+      res.json().then(json => {
+        this.setState({
+          items: json
+        });
+      })
+    );
   }
 
   btnSelect(item) {
@@ -50,15 +60,21 @@ export class AppContextProvider extends React.Component {
     });
   }
 
-  componentDidMount() {
-    fetch("https://buger-queen.firebaseio.com/products.json").then(res =>
-      res.json().then(json => {
-        this.setState({
-          items: json
-        });
-      })
-    );
+  btnCancel() {
+    let cancel = [];
+
+    this.state.order.map(item => {
+      if (item.cant > 1) {
+        item.cant = 1;
+        item.total = item.price;
+      }
+    });
+
+    this.setState({
+      order: cancel
+    });
   }
+
   render() {
     const { order } = this.state;
     // console.log(order);
@@ -68,6 +84,7 @@ export class AppContextProvider extends React.Component {
           items: this.state.items,
           btnSelect: this.btnSelect,
           btnDelete: this.btnDelete,
+          btnCancel: this.btnCancel,
           order
         }}
       >
