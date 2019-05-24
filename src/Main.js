@@ -5,17 +5,24 @@ import {
   BrowserRouter,
   NavLink
 }
+
 from "react-router-dom";
+import {AppContextProvider, AppContext} 
+from './appContext';
+
 
 import logoburguer from "./assets/burguer.png"
-import desayunos from "./desayunos";
-import home from "./home";
+
 import bebidas from "./bebidas";
-import complementos from "./complementos";
+import Ticket from "./tickets";
+bebidas.contextType = AppContext;
  
 class Main extends Component {
   render() {
     return (
+      <AppContextProvider>
+       
+      
       <BrowserRouter>
         <div class="main">
           <ul className="header">
@@ -38,8 +45,10 @@ class Main extends Component {
           <li><NavLink className="color-black font-roboto-normal" to="/Stuff">Producto</NavLink></li>
           <li><NavLink className="color-black font-roboto-normal" to="/bebidas">Precio</NavLink></li>
           </ul>
+          {/* <Ticket/> */}
         </div>
         </BrowserRouter>
+        </AppContextProvider>
     );
   }
 }
