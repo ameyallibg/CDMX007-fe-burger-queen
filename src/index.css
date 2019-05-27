@@ -96,6 +96,9 @@ ul.header {
   
   padding-left: 9%;
 }
+li{
+  list-style-type: none;
+}
 ul.header li a {
   
   font-weight: bold;
@@ -187,6 +190,7 @@ ul.header li a {
   margin-right: auto;
   margin-top: 10%;
   border-color: #707070;
+  background:#eeece6;
 }
 .img-comida{
   width: 100%;
@@ -235,4 +239,23 @@ ul.header li a {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+.ticket{
+  display: flex;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  width: 86%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-color: #707070;
+  background:#eeece6;
+
+}
+
+.marco{
+  background:#eeece6;
+  border:none;
 }

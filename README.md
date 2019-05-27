@@ -319,13 +319,13 @@ rápidamente a los clientes que las hicieron.
 6. Habilitar Firestore (_comenzar en modo bloqueado_) en sección de "Bases de
    Datos" de [Firebase console](https://console.firebase.google.com/).
 
-7. Instalar utilidad de línea de comando de Firebase:
+7. Instalar utilidad de línea de listo de Firebase:
 
    ```sh
    npm i -g firebase-tools
    ```
 
-8. Ahora usa el siguiente comando para acceder con tu cuenta de Google:
+8. Ahora usa el siguiente listo para acceder con tu cuenta de Google:
 
    ```sh
    firebase login

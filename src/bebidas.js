@@ -1,42 +1,31 @@
-// import React, { Component } from "react";
-import Ticket from "./tickets";
 import React from 'react';
-// import {AppContextProvider, AppContext} 
-// from './appContext';
 
 class bebidas extends React.Component {
-  clickMe(items) {
-    const producSelect = this.setState({
-      order: [...this.state.order, { name: items.name, price: items.precio }]
-    });
-  }
-
   render() {
-    var{isLoaded,items} = this.context ;
-    if (!isLoaded){
-      return <div>Loading--</div>
-    }
-    else if(window.location.href.includes("bebidas")){
+
+    const {items,handleClick} = this.context ;
+
+    if(window.location.href.includes("bebidas")){
     return (
 
-      <div class="container">
+      <div className="container">
       {
         items.filter(item =>item.type==="bebidas").map(item=>
-          <div class="container-flex-izq">
+          <div className="container-flex-izq">
           <button
                   className="marco-bloque" 
-                  onClick={this.clickMe.bind(this, item)}
-                   key={item.id}>
+                  onClick={() => handleClick(item)}
+                   >
           
-            <div class="bloque bloque-der">
-            <div class="bloque-img"><img class="img-comida" src={item.img} alt=""></img></div>
+            <div className="bloque bloque-der">
+            <div className="bloque-img"><img class="img-comida" src={item.img} alt=""></img></div>
             
             </div>
-            <div class="bloque bloque-centro">
-            <p class="title-container">{item.name}</p>
+            <div className="bloque bloque-centro">
+            <p className="title-container">{item.name}</p>
             </div>
-            <div class="bloque bloque-izq">
-            <p class="precio">${item.precio}</p>
+            <div className="bloque bloque-izq">
+            <p className="precio">${item.precio}</p>
             </div>
              
             </button>      
@@ -44,7 +33,6 @@ class bebidas extends React.Component {
         )
 
       }
-      <Ticket order={this.state.order} />
       </div>
               
     );
@@ -52,23 +40,26 @@ class bebidas extends React.Component {
   else if(window.location.href.includes("desayunos")){
     return (
 
-      <div class="container">
+      <div className="container">
       {
         items.filter(item =>item.type==="desayunos").map(item=>
-          <div class="container-flex-izq">
-          <div class="marco-bloque" key={item.id}>
-            <div class="bloque bloque-der">
-            <div class="bloque-img"><img class="img-comida" src={item.img}></img></div>
+          <div className="container-flex-izq">
+          <button className="marco-bloque" 
+                  onClick={() => handleClick(item)}
+                   >
+            <div className="bloque bloque-der">
+            <div className="bloque-img"><img className="img-comida" src={item.img} alt=""></img></div>
             
             </div>
-            <div class="bloque bloque-centro">
-            <p class="title-container">{item.name}</p>
+            <div className="bloque bloque-centro">
+            <p className="title-container">{item.name}</p>
             </div>
-            <div class="bloque bloque-izq">
-            <p class="precio">${item.precio}</p>
+            <div className="bloque bloque-izq">
+            <p className="precio">${item.precio}</p>
             </div>
-            </div>       
-          </div>)
+            </button>       
+          </div>
+          )
       }
       </div>
               
@@ -77,22 +68,24 @@ class bebidas extends React.Component {
   else if(window.location.href.includes("complementos")){
     return (
 
-      <div class="container">
+      <div className="container">
       {
         items.filter(item =>item.type==="complementos").map(item=>
-          <div class="container-flex-izq">
-          <div class="marco-bloque" key={item.id}>
-            <div class="bloque bloque-der">
-            <div class="bloque-img"><img class="img-comida" src={item.img}></img></div>
+          <div className="container-flex-izq">
+          <button className="marco-bloque" 
+                  onClick={() => handleClick(item)}
+                   >
+            <div className="bloque bloque-der">
+            <div className="bloque-img"><img className="img-comida" src={item.img} alt=""></img></div>
             
             </div>
-            <div class="bloque bloque-centro">
-            <p class="title-container">{item.name}</p>
+            <div className="bloque bloque-centro">
+            <p className="title-container">{item.name}</p>
             </div>
-            <div class="bloque bloque-izq">
-            <p class="precio">${item.precio}</p>
+            <div className="bloque bloque-izq">
+            <p className="precio">${item.precio}</p>
             </div>
-            </div>       
+            </button>       
           </div>)
       }
       </div>
@@ -102,22 +95,24 @@ class bebidas extends React.Component {
   else 
     return (
 
-      <div class="container">
+      <div className="container">
       {
         items.filter(item =>item.type==="hamburguesa").map(item=>
-          <div class="container-flex-izq">
-          <div class="marco-bloque" key={item.id}>
-            <div class="bloque bloque-der">
-            <div class="bloque-img"><img class="img-comida" src={item.img}></img></div>
+          <div className="container-flex-izq">
+          <button className="marco-bloque" 
+                  onClick={() => handleClick(item)}
+                   >
+            <div className="bloque bloque-der">
+            <div className="bloque-img"><img className="img-comida" src={item.img} alt=""></img></div>
             
             </div>
-            <div class="bloque bloque-centro">
-            <p class="title-container">{item.name}</p>
+            <div className="bloque bloque-centro">
+            <p className="title-container">{item.name}</p>
             </div>
-            <div class="bloque bloque-izq">
-            <p class="precio">${item.precio}</p>
+            <div className="bloque bloque-izq">
+            <p className="precio">${item.precio}</p>
             </div>
-            </div>       
+            </button>       
           </div>)
       }
       </div>
@@ -127,18 +122,6 @@ class bebidas extends React.Component {
   
 }
 
-// bebidas.contextType = AppContext;
 
-// class App extends React.Component {
-//   render(){
-//     return(
-
-//      <AppContextProvider>
-//        <bebidas/>
-//       </AppContextProvider>
-//     )
-//   }
-// }
-  
 
 export default bebidas;

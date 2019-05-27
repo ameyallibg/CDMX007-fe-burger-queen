@@ -1,41 +1,37 @@
     
 import React from "react";
+import borrar from './assets/borrar.png';
 
-// const Ticket = props => {
-//   console.log(props);
-//   return (
-//     <div>
-//       {props.order.map(order => (
-//         <ul className="produc-list">
-//           <li>
-//             <button className="btn-ticket">
-//               <pre>
-//                 {order.name} $ {order.precio}
-//               </pre>
-//             </button>
-//           </li>
-//         </ul>
-//       ))}
-//     </div>
-//   );
-// };
+
 
 class Ticket extends React.Component{
   render(){
-    var{order} = this.context ;
+    const {list, remove, cancel} = this.context;
+    
     return(
+      
           <div>
-      {order.map(order => (
-        <ul className="produc-list">
+      {list.map((element)=> (
+        <div className="produc-list">
           <li>
-            <button className="btn-ticket">
-              <pre>
-                {order.name} $ {order.precio}
-              </pre>
+            <button className="ticket">
+              <div>
+                {element.name} $ {element.precio}
+                
+              </div>
+              <button  className="marco"
+        onClick={()=>remove(element)} type="button"><div className="bloque-img bloque-der"><img className="img-comida" src={borrar} alt=""></img></div></button>
             </button>
           </li>
-        </ul>
-      ))}
+        
+
+        </div>
+      ))
+      }
+      <button  
+        onClick={() => cancel(list)} type="button"></button>
+     <div>$ {list.reduce((a, c)=>{
+                    return a + c.precio;}, 0)}</div>
     </div>
 
     )
@@ -44,3 +40,4 @@ class Ticket extends React.Component{
 
 
 export default Ticket;
+
