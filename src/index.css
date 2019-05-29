@@ -259,3 +259,17 @@ ul.header li a {
   background:#eeece6;
   border:none;
 }
+.buttonOrder{
+  border-radius: 10px;
+  background: #eeece6;
+  border: solid;
+  border-color: #721a16;
+  color: #721a16;
+  font-weight: bold;
+  width: 40%;
+  height: 3em;
+  border-width: 2px;
+}
+.font-size{
+  font-size: 2vw;
+}

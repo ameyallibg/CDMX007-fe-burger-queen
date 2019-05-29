@@ -1,20 +1,22 @@
 import React, {Component} from 'react';
-import fireBase from './config-firebase/FireBase';
-import LoginFirebase from './views/Login-firebase/Login-firebase';
-import './App.css';
-import RoutesApp from './Routes-App';
-import { createBrowserHistory} from 'history';
-
-const history = createBrowserHistory();
+import fireBase from './Fire.js';
+import Main from 'Main.js';
+import {AppContextProvider} from './appContext';
+import Login from './login';
 
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      user: {},
-    }
+    this.state = ({
+      user: null,
+    });
+    this.authListener = this.authListener.bind(this);
   }
+  componentDidMount() {
+    this.authListener();
+  }
+
   authListener() {
     fireBase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -31,17 +33,15 @@ class App extends Component {
     });
   }
 
-  componentDidMount() {
-    this.authListener();
-
-  }
+ 
   render(){
     
     return(
-      
+      <AppContextProvider>
     <div>
-    {this.state.user ? (<div><RoutesApp/>{history.replace('/Main')}</div> ):(  <LoginFirebase/>  )}
+    {this.state.user ? (<div><Login/></div> ):(  <Main/>  )}
     </div>
+    </AppContextProvider>
     )
   }
 }

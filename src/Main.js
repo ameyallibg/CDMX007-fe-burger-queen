@@ -1,4 +1,4 @@
-
+ 
 import React, { Component } from "react";
 import {
   Route,
@@ -17,7 +17,7 @@ import Ticket from "./tickets";
 
 bebidas.contextType = AppContext;
 Ticket.contextType = AppContext;
- 
+
 class Main extends Component {
   render() {
     return (

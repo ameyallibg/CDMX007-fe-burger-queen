@@ -4,9 +4,10 @@ import borrar from './assets/borrar.png';
 
 
 
+
 class Ticket extends React.Component{
   render(){
-    const {list, remove, cancel} = this.context;
+    const {list, remove, cancel,addUser} = this.context;
     
     return(
       
@@ -15,7 +16,7 @@ class Ticket extends React.Component{
         <div className="produc-list">
           <li>
             <button className="ticket">
-              <div>
+              <div className="font-size">
                 {element.name} $ {element.precio}
                 
               </div>
@@ -28,10 +29,15 @@ class Ticket extends React.Component{
         </div>
       ))
       }
-      <button  
-        onClick={() => cancel(list)} type="button"></button>
-     <div>$ {list.reduce((a, c)=>{
+      <div>TOTAL: $ {list.reduce((a, c)=>{
                     return a + c.precio;}, 0)}</div>
+      <div>
+     
+      <button  className="buttonOrder"
+        onClick={() => cancel(list)} type="button">Confirmar Orden</button>
+         <button type="submit" className="buttonOrder" onClick={addUser}>Cancelar Orden</button>
+        </div>
+     
     </div>
 
     )

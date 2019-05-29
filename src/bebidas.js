@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 class bebidas extends React.Component {
   render() {
-
+    
     const {items,handleClick} = this.context ;
 
     if(window.location.href.includes("bebidas")){
@@ -18,7 +19,7 @@ class bebidas extends React.Component {
                    >
           
             <div className="bloque bloque-der">
-            <div className="bloque-img"><img class="img-comida" src={item.img} alt=""></img></div>
+            <div className="bloque-img"><img className="img-comida" src={item.img} alt=""></img></div>
             
             </div>
             <div className="bloque bloque-centro">
@@ -43,7 +44,7 @@ class bebidas extends React.Component {
       <div className="container">
       {
         items.filter(item =>item.type==="desayunos").map(item=>
-          <div className="container-flex-izq">
+          <div className="container-flex-izq" >
           <button className="marco-bloque" 
                   onClick={() => handleClick(item)}
                    >
